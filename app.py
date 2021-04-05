@@ -16,10 +16,10 @@ def predictNew():
   return jsonify({ 'msg': 'Hello Android 2'})
 
 @app.route('/predictVerbal', methods= ['GET', 'POST'])
-def predict():
+def predictVerbal():
   identify_voice = voice_identifying_service()
 
-  predicted_number = identify_voice.predict('222_1.wav')
+  predicted_number = identify_voice.predict('635_225.wav')
 
   voice_dataset = {'Keyword': predicted_number}
 
