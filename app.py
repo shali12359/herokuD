@@ -1,7 +1,7 @@
 import flask
 from flask import jsonify
 from test import sayHello
-from Voice_identifying_service import voice_identifying_service
+# from Voice_identifying_service import voice_identifying_service
 
 app = flask.Flask(__name__)
 
